@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CQRS_JWTApp.API", "CQRS_JWTApp.API\CQRS_JWTApp.API.csproj", "{4F6FA553-409F-4A94-9983-0A049F147A86}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CQRS_JWTApp.API", "CQRS_JWTApp.API\CQRS_JWTApp.API.csproj", "{4F6FA553-409F-4A94-9983-0A049F147A86}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CQRS_JWTApp.MVC", "CQRS_JWTApp.MVC\CQRS_JWTApp.MVC.csproj", "{5F53EFC6-5F84-4850-84D3-1B1A8A17297E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{4F6FA553-409F-4A94-9983-0A049F147A86}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4F6FA553-409F-4A94-9983-0A049F147A86}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4F6FA553-409F-4A94-9983-0A049F147A86}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F53EFC6-5F84-4850-84D3-1B1A8A17297E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F53EFC6-5F84-4850-84D3-1B1A8A17297E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F53EFC6-5F84-4850-84D3-1B1A8A17297E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F53EFC6-5F84-4850-84D3-1B1A8A17297E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

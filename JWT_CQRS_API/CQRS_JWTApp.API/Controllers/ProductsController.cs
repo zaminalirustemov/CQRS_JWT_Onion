@@ -2,6 +2,7 @@
 using CQRS_JWTApp.API.Core.Application.Features.CQRS.Commands;
 using CQRS_JWTApp.API.Core.Application.Features.CQRS.Queries;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CQRS_JWTApp.API.Controllers
