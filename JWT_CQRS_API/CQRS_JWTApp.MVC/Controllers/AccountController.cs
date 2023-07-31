@@ -2,7 +2,6 @@
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
@@ -20,7 +19,7 @@ namespace CQRS_JWTApp.MVC.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> Login()
+        public IActionResult Login()
         {
             return View();
         }
@@ -31,20 +30,20 @@ namespace CQRS_JWTApp.MVC.Controllers
             {
                 HttpClient client = _httpClientFactory.CreateClient();
 
-                StringContent content = new(JsonSerializer.Serialize(userLoginModel),Encoding.UTF8,"application/json");
+                StringContent content = new(JsonSerializer.Serialize(userLoginModel), Encoding.UTF8, "application/json");
 
                 HttpResponseMessage response = await client.PostAsync("http://localhost:5281/api/Auth/Login", content);
 
                 if (response.IsSuccessStatusCode)
                 {
-                    string jsonData=await response.Content.ReadAsStringAsync();
+                    string jsonData = await response.Content.ReadAsStringAsync();
 
                     JsonSerializerOptions jsonSerializerOptions = new()
                     {
                         PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
                     };
 
-                    JwtTokenResponseModel tokenModel = JsonSerializer.Deserialize<JwtTokenResponseModel>(jsonData,jsonSerializerOptions);
+                    var tokenModel = JsonSerializer.Deserialize<JwtTokenResponseModel>(jsonData, jsonSerializerOptions);
 
                     if (tokenModel is not null)
                     {
@@ -52,7 +51,12 @@ namespace CQRS_JWTApp.MVC.Controllers
 
                         JwtSecurityToken token = handler.ReadJwtToken(tokenModel.Token);
 
-                        ClaimsIdentity claimsIdentity = new(token.Claims,JwtBearerDefaults.AuthenticationScheme);
+                        List<Claim> claims = token.Claims.ToList();
+
+                        if (tokenModel.Token is not null)
+                            claims.Add(new Claim("accessToken", tokenModel.Token));
+
+                        ClaimsIdentity claimsIdentity = new(claims, JwtBearerDefaults.AuthenticationScheme);
 
                         ClaimsPrincipal claimsPrincipal = new(claimsIdentity);
 
@@ -62,7 +66,7 @@ namespace CQRS_JWTApp.MVC.Controllers
                             IsPersistent = true,
                         };
 
-                        await HttpContext.SignInAsync(JwtBearerDefaults.AuthenticationScheme, claimsPrincipal,authenticationProperties);
+                        await HttpContext.SignInAsync(JwtBearerDefaults.AuthenticationScheme, claimsPrincipal, authenticationProperties);
 
                         return RedirectToAction("Index", "Home");
                     }

@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace CQRS_JWTApp.API.Controllers
 {
+    [Authorize(Roles = "SuperAdmin,Member")]
     [Route("api/[controller]")]
     [ApiController]
     public class ProductsController : ControllerBase
