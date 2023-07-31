@@ -20,11 +20,22 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            <a class="nav-link text-dark" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
+                        @{
+                            if (User.IsInRole("SuperAdmin"))
+                            {
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" asp-controller="category" asp-action="list">Categories</a>
+                                </li>
+                            }
+                            if (User.IsInRole("SuperAdmin") || User.IsInRole("Member"))
+                            {
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" asp-controller="product" asp-action="list">Products</a>
+                                </li>
+                            }
+                        }
                     </ul>
                 </div>
             </div>

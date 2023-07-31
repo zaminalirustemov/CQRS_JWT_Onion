@@ -1,0 +1,26 @@
+﻿@model ProductCreateModel
+
+<form asp-action="create" asp-controller="product" method="post">
+    <div class="mb-3">
+        <label asp-for="@Model.Name" class="form-label">Name</label>
+        <input asp-for="@Model.Name" class="form-control">
+        <span asp-validation-for="@Model.Name" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="@Model.Stock" class="form-label">Stock</label>
+        <input asp-for="@Model.Stock" class="form-control">
+        <span asp-validation-for="@Model.Stock" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="@Model.Price" class="form-label">Price</label>
+        <input asp-for="@Model.Price" class="form-control">
+        <span asp-validation-for="@Model.Price" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="@Model.CategoryId" class="form-label">Category</label>
+        <select class="form-select" asp-items="@Model.Categories" asp-for="@Model.CategoryId"></select>
+        <span asp-validation-for="@Model.Price" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-success">Create</button>
+</form>

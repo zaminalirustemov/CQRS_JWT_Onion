@@ -1,0 +1,12 @@
+﻿@model CategoryListModel
+
+<form asp-action="update" asp-controller="category" method="post">
+    <input type="hidden" asp-for="@Model.Id" />
+    <div class="mb-3">
+        <label asp-for="@Model.Definition" class="form-label">Definition</label>
+        <input asp-for="@Model.Definition" class="form-control">
+        <span asp-validation-for="@Model.Definition" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Update</button>
+</form>
