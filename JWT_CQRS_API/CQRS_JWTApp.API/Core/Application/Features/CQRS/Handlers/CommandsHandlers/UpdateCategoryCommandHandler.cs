@@ -16,7 +16,7 @@ namespace CQRS_JWTApp.API.Core.Application.Features.CQRS.Handlers.CommandsHandle
 
         public async Task<Unit> Handle(UpdateCategoryCommandRequest request, CancellationToken cancellationToken)
         {
-            Category updatedCategory = await _repository.GetByIdAsync(request.Id);
+            var updatedCategory = await _repository.GetByIdAsync(request.Id);
             if (updatedCategory is not null)
             {
                 updatedCategory.Definition = request.Definition;

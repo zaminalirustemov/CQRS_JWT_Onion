@@ -15,7 +15,7 @@ namespace CQRS_JWTApp.API.Core.Application.Features.CQRS.Handlers.CommandsHandle
         }
         public async Task<Unit> Handle(RemoveProductCommandRequest request, CancellationToken cancellationToken)
         {
-            Product removedProduct = await _repository.GetByIdAsync(request.Id);
+            var removedProduct = await _repository.GetByIdAsync(request.Id);
             if (removedProduct != null) await _repository.RemoveAsync(removedProduct);
             return Unit.Value;
         }

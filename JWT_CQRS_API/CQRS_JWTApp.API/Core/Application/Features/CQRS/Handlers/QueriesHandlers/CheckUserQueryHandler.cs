@@ -20,10 +20,10 @@ namespace CQRS_JWTApp.API.Core.Application.Features.CQRS.Handlers.QueriesHandler
         public async Task<CheckUserResponseDto> Handle(CheckUserQueryRequest request, CancellationToken cancellationToken)
         {
             CheckUserResponseDto checkUserResponseDto = new();
-            AppUser appUser = await _userRepository.GetByFilterAsync(x => x.Username == request.Username && x.Password == request.Password);
+            var appUser = await _userRepository.GetByFilterAsync(x => x.Username == request.Username && x.Password == request.Password);
             if (appUser != null)
             {
-                AppRole appRole = await _roleRepository.GetByFilterAsync(x => x.Id == appUser.AppRoleId);
+                var appRole = await _roleRepository.GetByFilterAsync(x => x.Id == appUser.AppRoleId);
 
                 checkUserResponseDto.Id = appUser.Id;
                 checkUserResponseDto.Username = appUser.Username;

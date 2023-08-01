@@ -121,8 +121,6 @@ namespace CQRS_JWTApp.MVC.Controllers
             return View(categoryListModel);
         }
 
-
-
         public async Task<IActionResult> Remove(int id)
         {
             var token = User.Claims.FirstOrDefault(x => x.Type == "accessToken")?.Value;

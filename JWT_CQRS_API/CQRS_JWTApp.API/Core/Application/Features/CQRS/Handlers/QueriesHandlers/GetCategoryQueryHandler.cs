@@ -19,7 +19,7 @@ namespace CQRS_JWTApp.API.Core.Application.Features.CQRS.Handlers.QueriesHandler
         }
         public async Task<CategoryListDto> Handle(GetCategoryQueryRequest request, CancellationToken cancellationToken)
         {
-            Category category = await _repository.GetByFilterAsync(x => x.Id == request.Id);
+            var category = await _repository.GetByFilterAsync(x => x.Id == request.Id);
             CategoryListDto categoryListDto = _mapper.Map<CategoryListDto>(category);
             return categoryListDto;
         }

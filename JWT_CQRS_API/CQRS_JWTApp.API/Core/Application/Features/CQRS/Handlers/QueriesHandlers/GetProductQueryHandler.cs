@@ -19,7 +19,7 @@ namespace CQRS_JWTApp.API.Core.Application.Features.CQRS.Handlers.QueriesHandler
         }
         public async Task<ProductListDto> Handle(GetProductQueryRequest request, CancellationToken cancellationToken)
         {
-            Product product = await _repository.GetByFilterAsync(x => x.Id == request.Id);
+            var product = await _repository.GetByFilterAsync(x => x.Id == request.Id);
             ProductListDto productListDto = _mapper.Map<ProductListDto>(product);
             return productListDto;
         }

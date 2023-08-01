@@ -15,7 +15,7 @@ namespace CQRS_JWTApp.API.Core.Application.Features.CQRS.Handlers.CommandsHandle
         }
         public async Task<Unit> Handle(RemoveCategoryCommandRequest request, CancellationToken cancellationToken)
         {
-            Category removedCategory = await _repository.GetByIdAsync(request.Id);
+            var removedCategory = await _repository.GetByIdAsync(request.Id);
             if (removedCategory != null) await _repository.RemoveAsync(removedCategory);
             return Unit.Value;
         }
