@@ -1,0 +1,12 @@
+C:\Users\HP\Desktop\Visual Studio Projects\JWT-CQRS\JWT_CQRS_API\Onion\Core\JwtApp.Domain\bin\Debug\net6.0\JwtApp.Domain.deps.json
+C:\Users\HP\Desktop\Visual Studio Projects\JWT-CQRS\JWT_CQRS_API\Onion\Core\JwtApp.Domain\bin\Debug\net6.0\JwtApp.Domain.dll
+C:\Users\HP\Desktop\Visual Studio Projects\JWT-CQRS\JWT_CQRS_API\Onion\Core\JwtApp.Domain\bin\Debug\net6.0\JwtApp.Domain.pdb
+C:\Users\HP\Desktop\Visual Studio Projects\JWT-CQRS\JWT_CQRS_API\Onion\Core\JwtApp.Domain\obj\Debug\net6.0\JwtApp.Domain.csproj.AssemblyReference.cache
+C:\Users\HP\Desktop\Visual Studio Projects\JWT-CQRS\JWT_CQRS_API\Onion\Core\JwtApp.Domain\obj\Debug\net6.0\JwtApp.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\Desktop\Visual Studio Projects\JWT-CQRS\JWT_CQRS_API\Onion\Core\JwtApp.Domain\obj\Debug\net6.0\JwtApp.Domain.AssemblyInfoInputs.cache
+C:\Users\HP\Desktop\Visual Studio Projects\JWT-CQRS\JWT_CQRS_API\Onion\Core\JwtApp.Domain\obj\Debug\net6.0\JwtApp.Domain.AssemblyInfo.cs
+C:\Users\HP\Desktop\Visual Studio Projects\JWT-CQRS\JWT_CQRS_API\Onion\Core\JwtApp.Domain\obj\Debug\net6.0\JwtApp.Domain.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\Visual Studio Projects\JWT-CQRS\JWT_CQRS_API\Onion\Core\JwtApp.Domain\obj\Debug\net6.0\JwtApp.Domain.dll
+C:\Users\HP\Desktop\Visual Studio Projects\JWT-CQRS\JWT_CQRS_API\Onion\Core\JwtApp.Domain\obj\Debug\net6.0\refint\JwtApp.Domain.dll
+C:\Users\HP\Desktop\Visual Studio Projects\JWT-CQRS\JWT_CQRS_API\Onion\Core\JwtApp.Domain\obj\Debug\net6.0\JwtApp.Domain.pdb
+C:\Users\HP\Desktop\Visual Studio Projects\JWT-CQRS\JWT_CQRS_API\Onion\Core\JwtApp.Domain\obj\Debug\net6.0\ref\JwtApp.Domain.dll

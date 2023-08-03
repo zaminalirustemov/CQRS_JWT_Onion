@@ -1,0 +1,15 @@
+C:\Users\HP\Desktop\Visual Studio Projects\JWT-CQRS\JWT_CQRS_API\Onion\Core\JwtApp.Application\bin\Debug\net6.0\JwtApp.Application.deps.json
+C:\Users\HP\Desktop\Visual Studio Projects\JWT-CQRS\JWT_CQRS_API\Onion\Core\JwtApp.Application\bin\Debug\net6.0\JwtApp.Application.dll
+C:\Users\HP\Desktop\Visual Studio Projects\JWT-CQRS\JWT_CQRS_API\Onion\Core\JwtApp.Application\bin\Debug\net6.0\JwtApp.Application.pdb
+C:\Users\HP\Desktop\Visual Studio Projects\JWT-CQRS\JWT_CQRS_API\Onion\Core\JwtApp.Application\bin\Debug\net6.0\JwtApp.Domain.dll
+C:\Users\HP\Desktop\Visual Studio Projects\JWT-CQRS\JWT_CQRS_API\Onion\Core\JwtApp.Application\bin\Debug\net6.0\JwtApp.Domain.pdb
+C:\Users\HP\Desktop\Visual Studio Projects\JWT-CQRS\JWT_CQRS_API\Onion\Core\JwtApp.Application\obj\Debug\net6.0\JwtApp.Application.csproj.AssemblyReference.cache
+C:\Users\HP\Desktop\Visual Studio Projects\JWT-CQRS\JWT_CQRS_API\Onion\Core\JwtApp.Application\obj\Debug\net6.0\JwtApp.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\Desktop\Visual Studio Projects\JWT-CQRS\JWT_CQRS_API\Onion\Core\JwtApp.Application\obj\Debug\net6.0\JwtApp.Application.AssemblyInfoInputs.cache
+C:\Users\HP\Desktop\Visual Studio Projects\JWT-CQRS\JWT_CQRS_API\Onion\Core\JwtApp.Application\obj\Debug\net6.0\JwtApp.Application.AssemblyInfo.cs
+C:\Users\HP\Desktop\Visual Studio Projects\JWT-CQRS\JWT_CQRS_API\Onion\Core\JwtApp.Application\obj\Debug\net6.0\JwtApp.Application.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\Visual Studio Projects\JWT-CQRS\JWT_CQRS_API\Onion\Core\JwtApp.Application\obj\Debug\net6.0\JwtApp.Application.csproj.CopyComplete
+C:\Users\HP\Desktop\Visual Studio Projects\JWT-CQRS\JWT_CQRS_API\Onion\Core\JwtApp.Application\obj\Debug\net6.0\JwtApp.Application.dll
+C:\Users\HP\Desktop\Visual Studio Projects\JWT-CQRS\JWT_CQRS_API\Onion\Core\JwtApp.Application\obj\Debug\net6.0\refint\JwtApp.Application.dll
+C:\Users\HP\Desktop\Visual Studio Projects\JWT-CQRS\JWT_CQRS_API\Onion\Core\JwtApp.Application\obj\Debug\net6.0\JwtApp.Application.pdb
+C:\Users\HP\Desktop\Visual Studio Projects\JWT-CQRS\JWT_CQRS_API\Onion\Core\JwtApp.Application\obj\Debug\net6.0\ref\JwtApp.Application.dll
